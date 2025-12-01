@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodio | Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<div class="header-bar">
+    <h1 class="logo">Foodio</h1>
+    <button class="signin-btn">Sign In</button>
+</div>
+
+<div class="hero-section">
+    <div class="hero-text">
+        <h2>Order food & groceries. <br> Fast delivery. Fresh meals.</h2>
+        <p>Create your account to get started!</p>
+    </div>
+
+    <div class="signup-card">
+        <h2>Create Account</h2>
+
+        <form id="signupForm">
+
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" placeholder="Create a password" required>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="t" required>
+                <label for="t">I agree to the Terms & Conditions</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+
+        <p class="success">✔ Account created successfully!</p>
+    </div>
+</div>
+
+<script>
+$("#signupForm").on("submit", function(e){
+    e.preventDefault();
+    $(".success").fadeIn();
+});
+</script>
+
+</body>
+</html>
