@@ -6,7 +6,7 @@ body {
     background: #fdfdfd;
 
     /* FOOD IMAGES IN BACKGROUND */
-    background-image: url('./public/images/food.jpg');  /* fruits/veggies top-left */
+    background-image: url('./food.jpg');  /* fruits/veggies top-left */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
